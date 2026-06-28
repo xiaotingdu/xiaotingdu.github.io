@@ -128,8 +128,9 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
 }
 .hero__contact { margin: 14px 0 0; display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
 .hero__contact a { color: var(--ink-2); display: inline-flex; align-items: center; gap: 6px; font-size: 15px; }
-.hero__contact a:hover { color: var(--red); text-decoration: none; }
-.hero__contact .ai, .hero__contact .icn { font-size: 20px; }
+.hero__contact a { transition: color .15s ease, transform .15s ease; }
+.hero__contact a:hover { color: var(--red); text-decoration: none; transform: translateY(-2px); }
+.hero__contact .ai, .hero__contact .icn { font-size: 22px; }
 
 /* Prospective students — the one deliberately prominent block */
 .callout {
@@ -160,7 +161,7 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
    About / generic prose
    ========================================================================= */
 .prose p { margin: 0 0 14px; color: var(--ink); }
-.prose .zh-block { color: var(--ink-2); font-size: 15.5px; }
+.zh-block { color: var(--ink-2); font-size: 14.5px; }
 .cols { display: grid; grid-template-columns: 1.4fr 1fr; gap: 32px; }
 .timeline { list-style: none; margin: 0; padding: 0; }
 .timeline li { padding: 7px 0; border-bottom: 1px solid var(--line); display: flex; gap: 14px; }
@@ -221,6 +222,12 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
 .subhead { font-weight: 700; color: var(--red); margin: 22px 0 10px; font-size: 12px; text-transform: uppercase; letter-spacing: .1em; }
 #services .list > li { padding: 6px 0; font-size: 14.5px; line-height: 1.55; }
 #services .list .bullet { font-size: 12px; }
+/* Teaching courses: two-column grid for balance */
+#teaching .list { display: grid; grid-template-columns: 1fr 1fr; column-gap: 40px; }
+#teaching .list > li { border-bottom: 0; padding: 7px 0; }
+/* Two-column variant for short lists (e.g. journal reviewing) */
+.list.cols2 { column-count: 2; column-gap: 44px; }
+.list.cols2 > li { break-inside: avoid; }
 .svc { display: grid; grid-template-columns: 150px 1fr; gap: 6px 16px; }
 .svc dt { color: var(--red); font-weight: 600; font-size: 14.5px; }
 .svc dd { margin: 0; color: var(--ink); }
@@ -275,6 +282,8 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
 
   .cols { grid-template-columns: 1fr; gap: 18px; }
   .interests { grid-template-columns: 1fr; }
+  #teaching .list { grid-template-columns: 1fr; }
+  .list.cols2 { column-count: 1; }
   .svc { grid-template-columns: 1fr; gap: 2px 0; }
   .svc dt { margin-top: 8px; }
 
