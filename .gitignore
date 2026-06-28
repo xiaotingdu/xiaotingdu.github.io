@@ -1,0 +1,9 @@
+# Tooling / editor
+.claude/
+.vscode/
+.idea/
+
+# OS junk
+.DS_Store
+__MACOSX/
+Thumbs.db
