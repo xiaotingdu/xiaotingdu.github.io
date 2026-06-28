@@ -151,6 +151,7 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
   font-variant-numeric: tabular-nums; font-size: 14.5px; padding-top: 2px;
 }
 .news span { color: var(--ink); }
+.news .ev { display: inline-block; width: 22px; margin-right: 4px; text-align: center; font-style: normal; }
 .todo { color: var(--ink-3); font-style: italic; }
 
 /* =========================================================================
