@@ -168,6 +168,13 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
 .timeline li:last-child { border-bottom: 0; }
 .timeline .yr { flex: 0 0 118px; color: var(--ink-2); font-weight: 600; font-size: 14px; font-variant-numeric: tabular-nums; }
 
+/* Research lead phrase */
+.research-lead {
+  font-family: var(--serif); font-style: italic; font-size: 19px; line-height: 1.5;
+  color: var(--ink-2); margin: -8px 0 24px; max-width: 800px;
+}
+.research-lead b { font-style: normal; color: var(--red); font-weight: 600; }
+
 /* Research interest cards */
 .interests { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 0 0 14px; }
 .interest {
