@@ -208,6 +208,8 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
 .venue a { color: var(--red); }
 .pub__body { color: var(--ink); }
 .pub__body .me { color: var(--red); font-weight: 700; }
+.corr { color: var(--red); font-size: 12px; margin-left: 2px; vertical-align: super; }
+.pub-note { font-size: 13px; color: var(--ink-2); margin: -6px 0 14px; }
 .pub__body .title { font-weight: 600; color: var(--ink); }
 .pub__body .viz { font-style: italic; color: var(--ink-2); }
 .pub__body .award { color: var(--red); font-weight: 600; }
