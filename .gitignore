@@ -3,6 +3,9 @@
 .vscode/
 .idea/
 
+# Unpublished manuscripts (never push drafts)
+unpublished/
+
 # OS junk
 .DS_Store
 __MACOSX/
